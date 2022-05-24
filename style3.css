@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+/*font-family: 'Fredoka', sans-serif;*/
+html {
+	font-family: 'Fredoka', sans-serif; !important;
+}
+#win {
+  font-size: 4em;
+  width: 530px;
+  border-radius: 20px;
+  text-align: right;
+}
+.cp_btn {
+	position: relative;
+	display: block;
+	width: 70px;
+	padding: 0.8em;
+	text-align: center;
+	font-weight: bold;
+  font-size: 1.5em;rgb(0, 255, 240);
+	text-decoration: none;
+	color: #1b8fd9;
+	text-shadow: 0 0 3px rgba(255, 255, 255, 0.0);
+	background: rgb(0, 255, 240);
+	transition: .4s;
+	border-radius: 50px;
+}
+.cp_btn2 {
+	position: relative;
+	display: block;
+	width: 140px;
+	padding: 0.8em;
+	text-align: center;
+	font-weight: bold;
+  font-size: 1.5em;
+	text-decoration: none;
+	color: #1b8fd9;
+	text-shadow: 0 0 3px rgba(255, 255, 255, 0.0);
+	background: rgb(0, 255, 240);
+	transition: .4s;
+	border-radius: 20px;
+}
+.cp_btn:hover {
+	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+	transition: .4s;
+}

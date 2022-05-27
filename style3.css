@@ -1,22 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
-/*font-family: 'Fredoka', sans-serif;*/
+@font-face {
+	 font-family: 'Moon';
+	 font-style: normal;
+	 font-weight: 900;
+	 src: url("fonts/Moon_Bold.woff2") format('woff2'),
+				url("fonts/Moon_Bold.woff") format('woff'),
+				url("fonts/Moon_Bold.otf") format('opentype');
+}
+@font-face {
+	 font-family: 'Moon';
+	 font-style: normal;
+	 font-weight: 500;
+	 src: url("fonts/Moon_Light.woff2") format('woff2'),
+				url("fonts/Moon_Light.woff") format('woff'),
+				url("fonts/Moon_Light.otf") format('opentype');
+}
+body{
+	font-family: 'Moon';
+}
+
 html {
-	font-family: 'Fredoka', sans-serif; !important;
+	font-family: 'Moon' !important;
 }
 #win {
   font-size: 4em;
-  width: 530px;
-  border-radius: 20px;
+  width: 50vw;
+  border-radius: 5vw;
   text-align: right;
 }
 .cp_btn {
 	position: relative;
 	display: block;
-	width: 70px;
+	width: 7.5vw;
+	height: 7.5vw;
 	padding: 0.8em;
 	text-align: center;
 	font-weight: bold;
-  font-size: 1.5em;rgb(0, 255, 240);
+  font-size: 2em;rgb(0, 255, 240);
 	text-decoration: none;
 	color: #1b8fd9;
 	text-shadow: 0 0 3px rgba(255, 255, 255, 0.0);
@@ -27,11 +46,12 @@ html {
 .cp_btn2 {
 	position: relative;
 	display: block;
-	width: 140px;
+	width: 13vw;
+	height: 7.5vw;
 	padding: 0.8em;
 	text-align: center;
 	font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
 	text-decoration: none;
 	color: #1b8fd9;
 	text-shadow: 0 0 3px rgba(255, 255, 255, 0.0);
@@ -42,4 +62,37 @@ html {
 .cp_btn:hover {
 	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
 	transition: .4s;
+}
+
+/* スマートフォン向けCSS */
+@media (max-width: 767px) {
+	#win {
+	  font-size: 2em;
+	  width: 95vw;
+	  border-radius: 2.5vw;
+	  text-align: right;
+	}
+
+	 #tax {
+		font-size: 1.5em;
+	 }
+	.cp_btn {
+		position: relative;
+		display: block;
+		width: 15vw;
+		height: 15vw;
+		padding: 0em;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.cp_btn2 {
+		position: relative;
+		display: block;
+		width: 22.5vw;
+		height: 15vw;
+		padding: 0em;
+		text-align: center;
+		font-weight: bold;
+	}
 }

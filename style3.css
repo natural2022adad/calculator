@@ -68,7 +68,7 @@ html {
 @media (max-width: 767px) {
 	#win {
 	  font-size: 2em;
-	  width: 95vw;
+	  width: 92vw;
 	  border-radius: 2.5vw;
 	  text-align: right;
 	}

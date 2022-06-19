@@ -1,8 +1,16 @@
+var dot = "";
 var cal1= {
   kazu: 1,
   greet: function() {
-    console.log(this.kazu);
-    document.getElementById("win").value += this.kazu;
+        if(dot != ".") {
+          console.log(dot);
+          console.log(this.kazu);
+          document.getElementById("win").value += this.kazu;
+        } else {
+          console.log(dot);
+          dot = parseFloat(dot);
+          document.getElementById("win").value += dot + this.kazu*0.9;
+        }
   }
 };
 var cal2 = { kazu: 2 };
@@ -18,11 +26,10 @@ var cal00 = { kazu: "00" };
 var caldot = {
   kazu: '.',
   greet: function() {
-    var dot = "" + "." + "" ;
-
+    var dot = "." ;
     console.log(dot);
     document.getElementById("win").value += dot;
-    var o1 = document.getElementById("win").value;
+    /*var o1 = document.getElementById("win").value;
     console.log(o1);
     var o2 = o1.split("");
     console.log(o2);
@@ -32,7 +39,7 @@ var caldot = {
     console.log(dotdot);
     dotdot = dotdot + "";
     console.log(dotdot);
-    document.getElementById("win").value = dotdot;
+    document.getElementById("win").value = dotdot;*/
 
   }
 };

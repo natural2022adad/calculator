@@ -59,7 +59,9 @@ function func () {
             console.log(box);
             d.getElementById("win").placeholder = total;
             if (box[1] == "z" ){
-                  box ="";}
+                  box ="";
+                  console.log(box);
+                }
             }else{
             console.log(box);
             d.getElementById("win").placeholder = total;
